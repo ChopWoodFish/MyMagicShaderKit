@@ -66,5 +66,10 @@ namespace Wind
             mouseInfo.tmpMouseMoveDelta.text = (mouseScreenPos - lastMouseScreenPos).ToString();
             // Debug.Log((mouseScreenPos - lastMouseScreenPos).ToString());
         }
+
+        public Vector2 GetMouseMoveDelta()
+        {
+            return mouseScreenPos - lastMouseScreenPos;
+        }
     }
 }
